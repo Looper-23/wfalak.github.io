@@ -201,24 +201,24 @@ var organizations = [
 
 <!-- Feel free to add empty tags. Data shouldn't be here. -->
 <div id="org_table">
-	<table>
-		<thread>
-			<tr>
-				<th width = "10%">Region</th>
-				<th>Country</th>
-				<th> Country Income Level</th>
-				<th>Organization Name</th>
-				<th>Organization Type </th>
-				<th>Sectors </th>
-				<th width = "25%"> Description </th>
-				<th>City</th>
-				<th>State/Region</th>
-				<th>Founding Year</th>
-				<th width = "5%"> Size </th>
-				<th>Type of Data Used</th>
-				<th>profileID</th>
-			<tr>
-		</thread>
+<table>
+	<thread>
+		<tr>
+			<th width = "10%">Region</th>
+			<th>Country</th>
+			<th> Country Income Level</th>
+			<th>Organization Name</th>
+			<th>Organization Type </th>
+			<th>Sectors </th>
+			<th width = "25%"> Description </th>
+			<th>City</th>
+			<th>State/Region</th>
+			<th>Founding Year</th>
+			<th width = "5%"> Size </th>
+			<th>Type of Data Used</th>
+			<th>profileID</th>
+		</tr>
+	</thread>
 	<tbody id = "data"></tbody>
 </table>
 </div>
@@ -237,7 +237,7 @@ for (i = 0; i <organiztions.length; i++){
  	'<td>' + obj ['Organization Type'] + '</td>' +
  	'<td>' + obj ['Sectors'] + '</td>' +
  	'<td>' + obj ['Description'] + '</td>' +
- 	'<td>' + obj ['Ciry'] + '</td>' +
+ 	'<td>' + obj ['City'] + '</td>' +
  	'<td>' + obj ['State/Region'] + '</td>' +
  	'<td>' + obj ['Founding Year'] + '</td>' +
  	'<td>' + obj ['Size'] + '</td>' +
@@ -246,6 +246,7 @@ for (i = 0; i <organiztions.length; i++){
  	'</tr>';
  	
  };
+ 
  document.getElementbyID('data').innerHTML = x;
  
  
