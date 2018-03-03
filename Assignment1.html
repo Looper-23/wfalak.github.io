@@ -199,26 +199,25 @@ var organizations = [
 
 <body>
 <!-- Feel free to add empty tags. Data shouldn't be here. -->
-	<div id="org_table"></div>
+<div id="org_table">
 	<table>
 		<thread>
 			<tr>
-				<th width = "10%">Reion</th>
-				<th> Country </th>
-				 <th> Country Income Level </th>
-				 <th> Organization Name </th>
-				 <th> Organization Type </th>
-				 <th> Sectors </th>
+				<th width = "10%">Region</th>
+				<th>Country</th>
+				 <th> Country Income Level</th>
+				 <th>Organization Name</th>
+				 <th>Organization Type </th>
+				 <th>Sectors </th>
 				 <th width = "25%"> Description </th>
-				 <th> City </th>
-				 <th> State/Region </th>
-				 <th> Founding Year </th>
+				 <th>City</th>
+				 <th>State/Region</th>
+				 <th>Founding Year</th>
 				 <th width = "5%"> Size </th>
-				 <th> Type of Data Used </th>
-				 <th> profileID </th>
+				 <th>Type of Data Used</th>
+				 <th>profileID</th>
 			<tr>
 		</thread>
-	</table>
 	<tbody id = "data"></tbody>
 </table>
 </div>
@@ -251,6 +250,9 @@ for (i = 0; i <organiztions.length; i++){
 // outputs the first item of the organizations array. Just for testing.
 console.log(organizations[0]); 
 // Your JavaScript code goes here
+function hideRow(obj) {
+	var y = obj.getElementsByClassName('rows');
+	obj.style.disply = 'none';
 </script>
 
 </body>
