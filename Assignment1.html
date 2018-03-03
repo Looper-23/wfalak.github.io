@@ -206,24 +206,23 @@ var organizations = [
 			<tr>
 				<th width = "10%">Region</th>
 				<th>Country</th>
-				 <th> Country Income Level</th>
-				 <th>Organization Name</th>
-				 <th>Organization Type </th>
-				 <th>Sectors </th>
-				 <th width = "25%"> Description </th>
-				 <th>City</th>
-				 <th>State/Region</th>
-				 <th>Founding Year</th>
-				 <th width = "5%"> Size </th>
-				 <th>Type of Data Used</th>
-				 <th>profileID</th>
+				<th> Country Income Level</th>
+				<th>Organization Name</th>
+				<th>Organization Type </th>
+				<th>Sectors </th>
+				<th width = "25%"> Description </th>
+				<th>City</th>
+				<th>State/Region</th>
+				<th>Founding Year</th>
+				<th width = "5%"> Size </th>
+				<th>Type of Data Used</th>
+				<th>profileID</th>
 			<tr>
 		</thread>
 	<tbody id = "data"></tbody>
 </table>
 </div>
 
-</script>
 	 
 <script>
 
@@ -247,6 +246,9 @@ for (i = 0; i <organiztions.length; i++){
  	'</tr>';
  	
  };
+ document.getElementbyID('data').innerHTML = x;
+ 
+ 
  
  	
  	
