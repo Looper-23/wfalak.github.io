@@ -198,6 +198,7 @@ var organizations = [
 </head>
 
 <body>
+<script>
 <!-- Feel free to add empty tags. Data shouldn't be here. -->
 <div id="org_table">
 	<table>
@@ -221,17 +222,19 @@ var organizations = [
 	<tbody id = "data"></tbody>
 </table>
 </div>
-				 
+
+</script>
+	 
 <script>
 
 var x = '':
 for (i = 0; i <organiztions.length; i++){
  	var obj = organizations[i];
- 	x+= '<tr onclick = 'hideRow(this)"> +
+ 	x+= '<tr onclick = "hideRow(this)"> +
  	'<td>' + obj ['Region'] + '</td>' +
  	'<td>' + obj ['Country'] + '</td>' +
  	'<td>' + obj ['Country Income Level'] + '</td>' +
- 	'<td>' + obj ['Organization Name + '</td>' +
+ 	'<td>' + obj ['Organization Name'] + '</td>' +
  	'<td>' + obj ['Organization Type'] + '</td>' +
  	'<td>' + obj ['Sectors'] + '</td>' +
  	'<td>' + obj ['Description'] + '</td>' +
@@ -239,7 +242,7 @@ for (i = 0; i <organiztions.length; i++){
  	'<td>' + obj ['State/Region'] + '</td>' +
  	'<td>' + obj ['Founding Year'] + '</td>' +
  	'<td>' + obj ['Size'] + '</td>' +
- 	'<td>' + obj ['Type of Data Used] + '</td>' +
+ 	'<td>' + obj ['Type of Data Used'] + '</td>' +
  	'<td>' + obj ['profileID'] + '</td class = rows"> +
  	'</tr>';
  	
