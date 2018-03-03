@@ -194,62 +194,48 @@ var organizations = [
 	
 ];
 </script>
-
 </head>
-
 <body>
 
-<!-- Feel free to add empty tags. Data shouldn't be here. -->
-<div id="org_table">
-<table>
-	<thead>
+	<h1> Dynamic Data Table </h1>
+	<h2 class= "organization">Organization's Table </h2>
+
+	<table border = 1 class ="center">
+		<thead>
 		<tr>
-			<th width = "10%">Region</th>
-			<th>Country</th>
-			<th> Country Income Level</th>
-			<th>Organization Name</th>
-			<th>Organization Type </th>
-			<th>Sectors</th>
+			<th width = "10%", class="FontColor">Region</th>
+			<th class="FontColor">Country</th>
+			<thclass="FontColor"> Country Income Level</th>
+			<th class="FontColor">Organization Name</th>
+			<th class="FontColor">Organization Type </th>
+			<th class="FontColor">Sectors</th>
 			<th width = "25%"> Description </th>
-			<th>City</th>
-			<th>State/Region</th>
-			<th>Founding Year</th>
+			<th class="FontColor">City</th>
+			<th class="FontColor">State/Region</th>
+			<th class="FontColor">Founding Year</th>
 			<th width = "5%"> Size </th>
-			<th>Type of Data Used</th>
-			<th>profileID</th>
+			<th class="FontColor">Type of Data Used</th>
+			<th class="FontColor">profileID</th>
 		</tr>
 	</thead>
-	<tbody id = "data"></tbody>
+	<tbody id = "orgs"></tbody>
 </table>
-</div>
 
-	 
+<table border=1 class ="center"?>
+	<thead>
+		<tr>
+			<th> Total Organizations </th>
+			<th> Total Countries </th>
+			<th> Total Cities </th>
+			<th Total High Income Countries </th>
+		</tr>
+	</thead>
+	<tbody id="stats"></tbody>
+</table>
+<div id="org_table"></div>
+
 <script>
 
-var x = '':
-for (i = 0; i <organiztions.length; i++){
- 	var obj = organizations[i];
- 	x += '<tr onclick = "hideRow(this)"> +
- 	'<td>' + obj ['Region'] + '</td>' +
- 	'<td>' + obj ['Country'] + '</td>' +
- 	'<td>' + obj ['Country Income Level'] + '</td>' +
- 	'<td>' + obj ['Organization Name'] + '</td>' +
- 	'<td>' + obj ['Organization Type'] + '</td>' +
- 	'<td>' + obj ['Sectors'] + '</td>' +
- 	'<td>' + obj ['Description'] + '</td>' +
- 	'<td>' + obj ['City'] + '</td>' +
- 	'<td>' + obj ['State/Region'] + '</td>' +
- 	'<td>' + obj ['Founding Year'] + '</td>' +
- 	'<td>' + obj ['Size'] + '</td>' +
- 	'<td>' + obj ['Type of Data Used'] + '</td>' +
- 	'<td>' + obj ['profileID'] + '</td class = rows"> +
- 	'</tr>';
- 	
- };
- 
- document.getElementbyID('data').innerHTML = x;
- 
-	
 // outputs the first item of the organizations array. Just for testing.
 console.log(organizations[0]); 
 // Your JavaScript code goes here
