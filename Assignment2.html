@@ -202,14 +202,14 @@ var organizations = [
 <!-- Feel free to add empty tags. Data shouldn't be here. -->
 <div id="org_table">
 <table>
-	<thread>
+	<thead>
 		<tr>
 			<th width = "10%">Region</th>
 			<th>Country</th>
 			<th> Country Income Level</th>
 			<th>Organization Name</th>
 			<th>Organization Type </th>
-			<th>Sectors </th>
+			<th>Sectors</th>
 			<th width = "25%"> Description </th>
 			<th>City</th>
 			<th>State/Region</th>
@@ -218,7 +218,7 @@ var organizations = [
 			<th>Type of Data Used</th>
 			<th>profileID</th>
 		</tr>
-	</thread>
+	</thead>
 	<tbody id = "data"></tbody>
 </table>
 </div>
@@ -249,10 +249,7 @@ for (i = 0; i <organiztions.length; i++){
  
  document.getElementbyID('data').innerHTML = x;
  
- 
- 
- 	
- 	
+	
 // outputs the first item of the organizations array. Just for testing.
 console.log(organizations[0]); 
 // Your JavaScript code goes here
