@@ -200,23 +200,23 @@ var organizations = [
 </head>
 
 <body>
-    <h2> Organization's Table </h2>
+    <h2> Organization Information</h2>
 	<table border ="thick solid #0000FF">
         <thead>
             <tr>
-                <th>Region</th>
-                <th>Country</th>
-                <th>Country Income Level</th>
-                <th>Organization Name</th>
-                <th>Organization Type</th>
-                <th>Sectors</th>
-                <th>Description</th>
-                <th>City</th>
-                <th>State/Region</th>
-                <th>Founding Year</th>
-                <th>Size</th>
-                <th>Type of Data Used</th>
-                <th>profileID</th>
+                <th class = "Highlight" >Region</th>
+                <th class = "Highlight" >Country</th>
+                <th class = "Highlight" >Country Income Level</th>
+                <th class = "Highlight" >Organization Name</th>
+                <th class = "Highlight" >Organization Type</th>
+                <th class = "Highlight" >Sectors</th>
+                <th class = "Highlight" >Description</th>
+                <th class = "Highlight" >City</th>
+                <th class = "Highlight" >State/Region</th>
+                <th class = "Highlight" >Founding Year</th>
+                <th class = "Highlight" >Size</th>
+                <th class = "Highlight" >Type of Data Used</th>
+                <th class = "Highlight" >profileID</th>
             </tr>                
         </thead>    
         <tbody id = "data"></tbody>
@@ -311,6 +311,17 @@ document.getElementById("stats").innerHTML = totaldata;
 document.getElementById("data").innerHTML = y;
 
 </script>
+
+.Highlight {
+	color: blue;
+	background-color: green;
+	font-style: regular;
+	
+}
+
+	tr:hover{
+		background-color: yellow;
+	}
 
 </body>
 </html>
